@@ -1,0 +1,25 @@
+{
+  "id": "f2f0f9c2-2b6a-4b1e-9b3a-blacklist-env",
+  "name": "Blacklist Microservice - Local",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "paste-token-from-flask-create-token",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "email",
+      "value": "blocked@example.com",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}

@@ -1,0 +1,168 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-5e6f-4a7b-8c9d-blacklistapi",
+    "name": "Blacklist Microservice",
+    "description": "API REST para gestionar la lista negra global de emails. Incluye POST /blacklists y GET /blacklists/{email}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Add email to blacklist",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status is 201 or duplicate 409', function () {",
+              "    pm.expect([201, 409]).to.include(pm.response.code);",
+              "});",
+              "pm.test('Response is JSON', function () {",
+              "    pm.response.to.be.json;",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"{{email}}\",\n    \"app_uuid\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3301\",\n    \"blocked_reason\": \"Enviaba spam a los clientes\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/blacklists",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "blacklists"
+          ]
+        },
+        "description": "Agrega un email a la lista negra global. Requiere Bearer Token."
+      },
+      "response": [
+        {
+          "name": "201 Created",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/blacklists",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "blacklists"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"blocked@example.com\",\n    \"app_uuid\": \"3f2504e0-4f89-11d3-9a0c-0305e82c3301\",\n    \"blocked_reason\": \"Enviaba spam a los clientes\"\n}"
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n    \"message\": \"Email blocked@example.com was added to the global blacklist.\",\n    \"created\": true\n}"
+        }
+      ]
+    },
+    {
+      "name": "Check if email is blacklisted",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test('Has is_blacklisted boolean', function () {",
+              "    var json = pm.response.json();",
+              "    pm.expect(json).to.have.property('is_blacklisted');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/blacklists/{{email}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "blacklists",
+            "{{email}}"
+          ]
+        },
+        "description": "Consulta si un email esta en la lista negra global y el motivo. Requiere Bearer Token."
+      },
+      "response": [
+        {
+          "name": "200 OK",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/blacklists/blocked@example.com",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "blacklists",
+                "blocked@example.com"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n    \"is_blacklisted\": true,\n    \"blocked_reason\": \"Enviaba spam a los clientes\"\n}"
+        }
+      ]
+    }
+  ]
+}
