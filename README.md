@@ -211,3 +211,10 @@ El repositorio ya incluye lo necesario para la plataforma **Python (Amazon Linux
 La estrategia de despliegue (all at once, rolling, rolling with additional batch,
 immutable, traffic splitting) se cambia en *Configuration > Updates, monitoring and
 logging > Deployment policy* antes de cada nueva version.
+
+## Documentación pública del API
+
+[Consultar documentación en Postman](https://documenter.getpostman.com/view/58993096/2sBYHSx1BC)
+
+Incluye endpoints, ejemplos de solicitudes y respuestas y escenarios de prueba.
+Para ejecutar la colección, configure `base_url` y un token propio en el entorno de Postman.
