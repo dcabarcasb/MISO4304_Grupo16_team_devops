@@ -165,3 +165,56 @@ En la carpeta `postman/` se incluyen:
 Importe ambos en Postman, ejecute `flask create-token` y pegue el valor en la
 variable `token` del environment. Luego importe la coleccion y ejecute las
 peticiones.
+
+## Despliegue en AWS Elastic Beanstalk
+
+El repositorio ya incluye lo necesario para la plataforma **Python (Amazon Linux 2023)**:
+
+- `Procfile`: levanta la app con `gunicorn` en el puerto 8000 (nginx de Beanstalk hace proxy).
+- `.ebextensions/01_environment.config`: ambiente con balanceador (ALB), auto scaling
+  de **3 a 6 instancias**, health check en `GET /health` y health reporting mejorado.
+- `GET /health`: endpoint sin token que responde `200` con `status`, `version`
+  (variable `APP_VERSION`) y `host` (instancia que atendio la solicitud). Sirve para
+  validar las estrategias de despliegue: cambie `APP_VERSION` entre versiones y
+  consulte `/health` en bucle para ver que instancias tienen la version nueva.
+- Con `AUTO_CREATE_TABLES=1` las tablas se crean al arrancar la aplicacion.
+
+### Pasos
+
+1. Crear una instancia **RDS PostgreSQL** y permitir en su security group el acceso
+   (puerto 5432) desde el security group de las instancias de Beanstalk.
+2. Generar el paquete a desplegar:
+
+   ```bash
+   git archive -o deploy.zip HEAD
+   ```
+
+3. Crear la aplicacion y el ambiente en Beanstalk (plataforma Python) subiendo
+   `deploy.zip`. En AWS Academy usar `LabRole` / `LabInstanceProfile`.
+4. Configurar en el ambiente las variables de entorno (no van en el repositorio):
+
+   | Variable           | Ejemplo                                                        |
+   | ------------------ | -------------------------------------------------------------- |
+   | `DATABASE_URL`     | `postgresql+psycopg2://usuario:clave@<endpoint-rds>:5432/blacklist` |
+   | `JWT_SECRET_KEY`   | clave larga y aleatoria                                        |
+   | `STATIC_API_TOKEN` | token estatico de la API                                       |
+
+5. Generar el Bearer token con los mismos `JWT_SECRET_KEY` y `STATIC_API_TOKEN`
+   configurados en Beanstalk:
+
+   ```bash
+   flask create-token
+   ```
+
+6. Verificar: `curl http://<url-beanstalk>/health`.
+
+La estrategia de despliegue (all at once, rolling, rolling with additional batch,
+immutable, traffic splitting) se cambia en *Configuration > Updates, monitoring and
+logging > Deployment policy* antes de cada nueva version.
+
+## Documentación pública del API
+
+[Consultar documentación en Postman](https://documenter.getpostman.com/view/58993096/2sBYHSx1BC)
+
+Incluye endpoints, ejemplos de solicitudes y respuestas y escenarios de prueba.
+Para ejecutar la colección, configure `base_url` y un token propio en el entorno de Postman.

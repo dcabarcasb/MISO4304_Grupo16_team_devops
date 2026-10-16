@@ -2,6 +2,7 @@ from datetime import timedelta
 
 import click
 from flask import Flask
+from sqlalchemy.exc import SQLAlchemyError
 
 from app.config import Config
 from app.extensions import db, jwt, ma
@@ -21,7 +22,21 @@ def create_app(config_class=Config):
 
     _register_commands(app)
 
+    if app.config["AUTO_CREATE_TABLES"]:
+        _create_tables(app)
+
     return app
+
+
+def _create_tables(app):
+    # Several gunicorn workers may start at once; if another one already
+    # created the tables, the error is ignored.
+    with app.app_context():
+        try:
+            db.create_all()
+        except SQLAlchemyError as err:
+            db.session.rollback()
+            app.logger.warning("create_all skipped: %s", err)
 
 
 def _register_commands(app):
