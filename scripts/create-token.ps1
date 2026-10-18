@@ -1,7 +1,8 @@
 # Genera el Bearer token (JWT HS256) equivalente a `flask create-token`
 # sin necesidad de Python. Lee JWT_SECRET_KEY y STATIC_API_TOKEN del .env
 # y guarda el token en la variable BEARER_TOKEN del mismo .env.
-param([string]$EnvFile = (Join-Path $PSScriptRoot "..\.env"))
+param([string]$EnvFile)
+if (-not $EnvFile) { $EnvFile = Join-Path $PSScriptRoot "..\.env" }
 
 $vars = @{}
 Get-Content $EnvFile | Where-Object { $_ -match '^\s*([A-Z_]+)=(.*)$' } | ForEach-Object { $vars[$Matches[1]] = $Matches[2] }

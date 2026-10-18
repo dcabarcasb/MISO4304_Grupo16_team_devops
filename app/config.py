@@ -1,5 +1,17 @@
 import os
 
+_VERSION_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "VERSION")
+
+
+def _read_version():
+    # The VERSION file travels inside each deployed bundle, so every
+    # deployment strategy test can be told apart from GET /health.
+    try:
+        with open(_VERSION_FILE, encoding="utf-8") as fh:
+            return fh.read().strip()
+    except OSError:
+        return os.getenv("APP_VERSION", "1.0.0")
+
 
 class Config:
     SQLALCHEMY_DATABASE_URI = os.getenv(
@@ -14,4 +26,4 @@ class Config:
     # being turned into 500 by Flask-RESTful.
     PROPAGATE_EXCEPTIONS = True
     AUTO_CREATE_TABLES = os.getenv("AUTO_CREATE_TABLES", "0") == "1"
-    APP_VERSION = os.getenv("APP_VERSION", "1.0.0")
+    APP_VERSION = _read_version()
