@@ -1,0 +1,25 @@
+{
+  "id": "8c1d6a3e-5b2f-4d7a-9e41-blacklist-aws",
+  "name": "Blacklist Microservice - AWS Beanstalk",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://blacklist-grupo16.us-east-1.elasticbeanstalk.com",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "paste-token-from-flask-create-token",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "email",
+      "value": "blocked@example.com",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}
