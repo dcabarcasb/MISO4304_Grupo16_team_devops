@@ -7,10 +7,9 @@ from app import create_app
 from app.config import Config
 from app.extensions import db
 
-TEST_DATABASE_URL = os.getenv(
-    "TEST_DATABASE_URL",
-    "postgresql+psycopg2://postgres:postgres@localhost:5432/blacklist_test",
-)
+# In-memory SQLite by default so the suite runs without a database server
+# (locally and in CI). Set TEST_DATABASE_URL to run against PostgreSQL.
+TEST_DATABASE_URL = os.getenv("TEST_DATABASE_URL", "sqlite:///:memory:")
 STATIC_API_TOKEN = "test-static-token"
 
 
