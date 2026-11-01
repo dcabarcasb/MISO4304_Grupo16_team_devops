@@ -118,7 +118,7 @@ commit a `main` (disparado por AWS CodePipeline):
 2. **build:** `pytest` con reporte JUnit (visible en la pestaña *Reports* de
    CodeBuild). Si alguna prueba falla, el build falla y no se genera artefacto.
 3. **artifacts:** ZIP listo para Elastic Beanstalk (`app/`, `.ebextensions/`,
-   `Procfile`, `requirements.txt`, `run.py`) almacenado en S3. No hay despliegue
+   `Procfile`, `requirements.txt`, `run.py`, `VERSION`) almacenado en S3. No hay despliegue
    automatico (solo CI).
 
 La configuracion paso a paso en la consola de AWS esta en

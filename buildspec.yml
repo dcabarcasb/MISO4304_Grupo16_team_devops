@@ -37,5 +37,6 @@ artifacts:
     - Procfile
     - requirements.txt
     - run.py
+    - VERSION
   exclude-paths:
     - "**/__pycache__/**/*"
