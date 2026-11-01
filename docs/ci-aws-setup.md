@@ -7,9 +7,10 @@ de lista negra global de emails.
 
 - Región: `us-east-1` (AWS Academy).
 - Repositorio: `dcabarcasb/MISO4304_Grupo16_team_devops`.
-- Rama: `main`.
+- Rama: `main` (equivale a la rama "master" del enunciado).
 - `buildspec.yml` en la raíz del repositorio y ya publicado en `main`.
-- Las pruebas unitarias corren con SQLite en CI (variable `TEST_DATABASE_URL`).
+- Las pruebas unitarias corren con SQLite en memoria por defecto
+  (`tests/conftest.py`), no se necesita motor de base de datos en CI.
 - El artefacto es un ZIP en S3 (sin despliegue automático / sin CD).
 
 ## 4.1 Crear el bucket de artefactos (S3)
@@ -37,9 +38,11 @@ de lista negra global de emails.
 5. **Buildspec:** "Use a buildspec file" → ruta `buildspec.yml` (debe estar publicado en `main`).
 6. **Artifacts:** Type **Amazon S3** → bucket `grupo16-blacklist-artifacts` → nombre `blacklist-build` → empaquetado **Zip**.
 7. **Logs:** CloudWatch logs habilitado (necesario para las capturas de pantalla).
-8. **Environment variables** (si no están definidas en el buildspec):
-   - `TEST_DATABASE_URL` = `sqlite:///./test_ci.db`
+8. **Environment variables:** no se requieren (las pruebas usan SQLite en memoria).
 9. Create. Luego **Start build** una vez para confirmar que ejecuta `pytest` y sube el ZIP.
+10. El buildspec publica los resultados de `pytest` en el report group
+    `grupo16-blacklist-build-pytest-reports` (pestaña **Reports** del build), útil para
+    las capturas de pruebas exitosas y fallidas.
 
 ## 4.4 Crear el CodePipeline
 
@@ -55,6 +58,6 @@ de lista negra global de emails.
 
 ## 4.5 Evidencias a capturar
 
-- **Ejecución exitosa:** grafo de ejecución del CodePipeline (todo en verde), logs de CodeBuild mostrando `pytest` en verde y el objeto `blacklist-build.zip` creado en S3.
+- **Ejecución exitosa:** grafo de ejecución del CodePipeline (todo en verde), logs de CodeBuild mostrando `pytest` en verde, el reporte de pruebas (19 passed) y el artefacto ZIP creado en S3 (cuando el build lo dispara CodePipeline, el ZIP queda en el bucket de artefactos del pipeline, carpeta `grupo16-blacklist-pi.../BuildArtif/`).
 - **Ejecución fallida:** publicar temporalmente un commit que rompa una prueba (p. ej. cambiar un assert), dejar correr el pipeline, capturar la etapa Build fallida y la salida de la prueba que falla; luego revertir el commit y volver a ejecutar.
 - Capturar también el estado de la conexión, la configuración del proyecto de CodeBuild y las etapas source/build del pipeline para el documento PDF.

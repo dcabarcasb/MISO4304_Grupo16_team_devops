@@ -109,6 +109,21 @@ export TEST_DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/
 pytest -v
 ```
 
+## Integracion continua (AWS CodeBuild + CodePipeline)
+
+El archivo `buildspec.yml` define el build que ejecuta AWS CodeBuild en cada
+commit a `main` (disparado por AWS CodePipeline):
+
+1. **install:** Python 3.11 e instalacion de `requirements.txt`.
+2. **build:** `pytest` con reporte JUnit (visible en la pestaña *Reports* de
+   CodeBuild). Si alguna prueba falla, el build falla y no se genera artefacto.
+3. **artifacts:** ZIP listo para Elastic Beanstalk (`app/`, `.ebextensions/`,
+   `Procfile`, `requirements.txt`, `run.py`) almacenado en S3. No hay despliegue
+   automatico (solo CI).
+
+La configuracion paso a paso en la consola de AWS esta en
+[docs/ci-aws-setup.md](docs/ci-aws-setup.md).
+
 ## API REST
 
 Todos los endpoints requieren el encabezado `Authorization: Bearer <token>`.

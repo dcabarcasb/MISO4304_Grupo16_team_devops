@@ -1,0 +1,41 @@
+# AWS CodeBuild - Integracion continua del microservicio de lista negra.
+# Instala dependencias, ejecuta las pruebas unitarias y genera el artefacto
+# (ZIP para Elastic Beanstalk). No despliega: solo CI.
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - python --version
+      - pip install --upgrade pip
+      - pip install -r requirements.txt
+
+  build:
+    commands:
+      # Las pruebas usan SQLite en memoria (tests/conftest.py), no requieren BD.
+      # Si alguna prueba falla, el build falla y no se genera el artefacto.
+      - python -m pytest -v --junitxml=reports/junit.xml
+
+  post_build:
+    commands:
+      - echo "Pruebas superadas. Empaquetando artefacto para Elastic Beanstalk."
+
+reports:
+  pytest-reports:
+    files:
+      - junit.xml
+    base-directory: reports
+    file-format: JUNITXML
+
+artifacts:
+  name: blacklist-build
+  files:
+    - app/**/*
+    - .ebextensions/**/*
+    - Procfile
+    - requirements.txt
+    - run.py
+  exclude-paths:
+    - "**/__pycache__/**/*"
