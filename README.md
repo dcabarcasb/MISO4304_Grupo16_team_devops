@@ -126,7 +126,22 @@ La configuracion paso a paso en la consola de AWS esta en
 
 ## API REST
 
-Todos los endpoints requieren el encabezado `Authorization: Bearer <token>`.
+Todos los endpoints de `/blacklists` requieren el encabezado
+`Authorization: Bearer <token>`.
+
+### Errores de autorización
+
+Aplican a `POST /blacklists` y `GET /blacklists/<email>`:
+
+| Código | Caso                                                                 | Cuerpo de ejemplo                                   |
+| ------ | -------------------------------------------------------------------- | --------------------------------------------------- |
+| `401`  | Falta el encabezado `Authorization` o no usa el esquema `Bearer`.    | `{"msg": "Missing Authorization Header"}`           |
+| `401`  | El token expiró.                                                     | `{"msg": "Token has expired"}`                      |
+| `422`  | El token no es un JWT válido (mal formado o firmado con otra clave). | `{"msg": "Not enough segments"}`                    |
+| `403`  | JWT válido, pero no corresponde al `STATIC_API_TOKEN` configurado.    | `{"message": "Invalid authorization token."}`       |
+
+Los errores `401` y `422` los genera Flask-JWT-Extended (campo `msg`); el `403` lo
+genera el microservicio (campo `message`).
 
 ### POST /blacklists
 
@@ -156,8 +171,8 @@ Respuesta `201 Created`:
 }
 ```
 
-Respuestas de error: `400` (datos invalidos), `401` (token ausente), `403`
-(token invalido), `409` (el email ya existe en la lista negra).
+Respuestas de error: `400` (datos invalidos), `409` (el email ya existe en la
+lista negra) y los [errores de autorización](#errores-de-autorización).
 
 ### GET /blacklists/<email>
 
@@ -181,16 +196,21 @@ Si el email no esta en la lista:
 }
 ```
 
+Respuestas de error: los [errores de autorización](#errores-de-autorización).
+
 ## Postman
 
 En la carpeta `postman/` se incluyen:
 
 - `collection.json`: coleccion con los dos endpoints y escenarios de prueba.
-- `environment.json`: environment con `base_url`, `token` y `email`.
+- `environment.json`: environment local (`base_url` = `http://localhost:5000`).
+- `environment.aws.json`: environment para el ambiente desplegado en AWS Elastic
+  Beanstalk. Reemplace `base_url` por la URL del ambiente.
 
-Importe ambos en Postman, ejecute `flask create-token` y pegue el valor en la
-variable `token` del environment. Luego importe la coleccion y ejecute las
-peticiones.
+Ambos environments definen `base_url`, `token` y `email`. Importe el que
+corresponda en Postman, ejecute `flask create-token` (con el mismo
+`JWT_SECRET_KEY` y `STATIC_API_TOKEN` del ambiente) y pegue el valor en la
+variable `token`. Luego importe la coleccion y ejecute las peticiones.
 
 ## Despliegue en AWS Elastic Beanstalk
 
@@ -232,7 +252,13 @@ El repositorio ya incluye lo necesario para la plataforma **Python (Amazon Linux
    flask create-token
    ```
 
+   Sin Python local, `scripts/create-token.ps1` genera el mismo token a partir del
+   `.env` y lo guarda como `BEARER_TOKEN`.
+
 6. Verificar: `curl http://<url-beanstalk>/health`.
+
+Para cambiar `DATABASE_URL` en Beanstalk sin escribir la contrasena en la consola,
+`scripts/set-database-url.ps1` la pide de forma oculta y actualiza el ambiente por CLI.
 
 La estrategia de despliegue (all at once, rolling, rolling with additional batch,
 immutable, traffic splitting) se cambia en *Configuration > Updates, monitoring and

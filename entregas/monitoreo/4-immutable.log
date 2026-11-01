@@ -1,0 +1,1785 @@
+22:01:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:01:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:01:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:01:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:11 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:22 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:26 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:27 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:43 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:02:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:02:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:02:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:03 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:11 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:27 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:03:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:03:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:03:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:27 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:04:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:04:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:04:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:04:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:04:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:04:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:04:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:03 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:43 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:05:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:05:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:05:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:05:59 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:43 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:06:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:06:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:06:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:06:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:08 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:11 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:22 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:26 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:27 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:43 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:07:54  HTTP=000
+22:07:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:07:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:07:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:07:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:03 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:27 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:08:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:08:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:08:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:08:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:08 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:11 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:43 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:09:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:09:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:09:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:09:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:09:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:09:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:06 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:19 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:22 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:38 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:46 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:10:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:10:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:10:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:10:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:10:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:10:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:29 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:33 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:46 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:11:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:11:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:11:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:11:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:11:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:11:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:03 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:20 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:21 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:22 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:34 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:42 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:12:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:12:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:12:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:55 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:12:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:12:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:12:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-13-103.ec2.internal"}
+ HTTP=200
+22:13:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:03 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:08 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:14 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:21 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:29 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:35 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:46 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:48 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:13:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:13:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:13:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:13:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:13:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:10 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:24 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:26 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:30 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:36 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:14:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:51 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:14:52 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:14:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:14:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:14:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:05 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:07 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:12 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:16 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:21 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:25 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:26 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:38 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:45 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:46 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:50 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:15:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:15:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:15:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:15:58 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:15:59 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:01 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-88-76.ec2.internal"}
+ HTTP=200
+22:16:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:04 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:13 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:22 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:32 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:37 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:16:53 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:16:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:16:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:16:58  HTTP=000
+22:17:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:11 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:18 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:23 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:28 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:39 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:44 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:47 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:17:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:17:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:54 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:17:57 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:17:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:02 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:08 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:09 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:15 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:17 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:25 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:29 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:31 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:38 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:40 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:41 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:46 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:49 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:18:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:18:56 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:18:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:18:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:00 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:19:01  HTTP=000
+22:19:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:05 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:08 {"status": "ok", "version": "1.0.3", "host": "ip-172-31-26-72.ec2.internal"}
+ HTTP=200
+22:19:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:21 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:22 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:25 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:26 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:29 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:30 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:38 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:46 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:50 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:54 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:19:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:19:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:19:59 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:02 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:08 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:11 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:12 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:15 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:19 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:21 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:25 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:29 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:33 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:37 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:41 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:43 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:44 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:45 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:47 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:48 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:49 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:51 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:52 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:53 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:55 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:20:56 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:20:57 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:20:58 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:00 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:01 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:03 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:04 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:06 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:07 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:09 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:10 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:13 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:14 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:16 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:17 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:18 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:20 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:21 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:23 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:24 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:25 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:27 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:28 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:29 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:31 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:32 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:34 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:35 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:36 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:38 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
+22:21:39 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-40-41.ec2.internal"}
+ HTTP=200
+22:21:40 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-0-167.ec2.internal"}
+ HTTP=200
+22:21:42 {"status": "ok", "version": "1.0.4", "host": "ip-172-31-84-207.ec2.internal"}
+ HTTP=200
