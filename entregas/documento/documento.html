@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Proyecto 1 entrega 1 – Documento</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 10.5pt; color: #1f2328; line-height: 1.45; }
+  h1 { font-size: 20pt; margin: 0 0 6pt; color: #0b3d91; }
+  h2 { font-size: 15pt; color: #0b3d91; border-bottom: 2px solid #0b3d91; padding-bottom: 3pt; margin-top: 22pt; page-break-after: avoid; }
+  h3 { font-size: 12.5pt; color: #1a4fa0; margin-top: 16pt; page-break-after: avoid; }
+  h4 { font-size: 11pt; margin: 12pt 0 4pt; page-break-after: avoid; }
+  p, li { text-align: justify; }
+  table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 9.5pt; page-break-inside: avoid; }
+  th, td { border: 1px solid #b7c3d0; padding: 4pt 6pt; vertical-align: top; text-align: left; }
+  th { background: #e8eef7; }
+  code { font-family: Consolas, monospace; font-size: 9pt; background: #f2f4f7; padding: 0 2pt; }
+  figure { margin: 8pt 0 12pt; page-break-inside: avoid; text-align: center; }
+  figure img { max-width: 100%; max-height: 118mm; border: 1px solid #c9d1d9; }
+  figcaption { font-size: 8.5pt; color: #57606a; margin-top: 3pt; }
+  .cover { height: 245mm; display: flex; flex-direction: column; justify-content: center; text-align: center; page-break-after: always; }
+  .cover h1 { font-size: 26pt; }
+  .cover .sub { font-size: 13pt; margin: 4pt 0; }
+  .cover table { width: 75%; margin: 24pt auto 0; font-size: 10.5pt; }
+  .pb { page-break-before: always; }
+  .kv td:first-child { width: 32%; font-weight: 600; background: #f6f8fa; }
+  .note { background: #fff8e5; border-left: 4px solid #d4a72c; padding: 6pt 8pt; font-size: 9.5pt; }
+  .ok { color: #1a7f37; font-weight: 600; }
+  .bad { color: #cf222e; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ============ PORTADA ============ -->
+<section class="cover">
+  <div class="sub">Universidad de los Andes · Maestría en Ingeniería de Software (MISO)</div>
+  <div class="sub">MISO4304 – DevOps: Agilizando el despliegue continuo de aplicaciones</div>
+  <h1>Proyecto 1 · Entrega 1<br>Despliegue manual de un microservicio sobre AWS Elastic Beanstalk (PaaS)</h1>
+  <div class="sub">Microservicio de lista negra global de emails</div>
+  <table>
+    <tr><th colspan="2">Grupo 16</th></tr>
+    <tr><td>Integrante 1</td><td>[Nombre completo]</td></tr>
+    <tr><td>Integrante 2</td><td>[Nombre completo]</td></tr>
+    <tr><td>Integrante 3</td><td>[Nombre completo]</td></tr>
+    <tr><td>Integrante 4</td><td>[Nombre completo]</td></tr>
+    <tr><td>Fecha</td><td>Octubre de 2026</td></tr>
+  </table>
+</section>
+
+<!-- ============ ENLACES ============ -->
+<h2>Información general de la entrega</h2>
+<table class="kv">
+  <tr><td>Repositorio GitHub</td><td><code>https://github.com/dcabarcasb/MISO4304_Grupo16_team_devops</code></td></tr>
+  <tr><td>URL de la aplicación (Beanstalk)</td><td><code>http://blacklist-grupo16.us-east-1.elasticbeanstalk.com</code></td></tr>
+  <tr><td>Documentación publicada en Postman</td><td><code>https://documenter.getpostman.com/view/58993096/2sBYHSx1BC</code></td></tr>
+  <tr><td>Colección y environments versionados</td><td><code>postman/collection.json</code>, <code>postman/environment.json</code> (local), <code>postman/environment.aws.json</code> (AWS)</td></tr>
+  <tr><td>Región AWS</td><td>us-east-1 (N. Virginia)</td></tr>
+</table>
+
+<h3>Arquitectura desplegada</h3>
+<ul>
+  <li><b>Aplicación:</b> microservicio Python 3.12 con Flask, Flask-RESTful, Flask-SQLAlchemy, Flask-Marshmallow, Flask-JWT-Extended y Werkzeug, servido con gunicorn.</li>
+  <li><b>Endpoints:</b> <code>POST /blacklists</code> (agrega un email; guarda IP de origen y fecha/hora), <code>GET /blacklists/&lt;email&gt;</code> (indica si está bloqueado y el motivo) y <code>GET /health</code> (health check sin token; devuelve versión e instancia). Los endpoints de negocio exigen Bearer Token (JWT firmado a partir de un token estático).</li>
+  <li><b>PaaS:</b> AWS Elastic Beanstalk, ambiente <code>blacklist-env</code> (aplicación <code>blacklist-app</code>), plataforma <i>Python 3.12 running on 64bit Amazon Linux 2023</i>, tipo <i>Load balanced</i> con Application Load Balancer y Auto Scaling de <b>3 a 6</b> instancias <code>t3.micro</code>.</li>
+  <li><b>Base de datos:</b> Amazon RDS PostgreSQL 18.3 (<code>blacklist-db</code>, <code>db.t4g.micro</code>, Single-AZ, sin acceso público), accesible solo desde el security group de las instancias de Beanstalk.</li>
+</ul>
+
+<!-- ============ 1. DESPLIEGUE ============ -->
+<h2 class="pb">1. Creación y despliegue de la aplicación en AWS Elastic Beanstalk</h2>
+
+<h3>1.a Configuración de RDS</h3>
+<p>Se creó la base de datos desde <i>RDS → Create database</i> con el método <i>Full configuration</i>, motor PostgreSQL y plantilla <i>Free tier</i>.</p>
+<table>
+  <tr><th>Parámetro</th><th>Valor</th></tr>
+  <tr><td>Identificador</td><td><code>blacklist-db</code></td></tr>
+  <tr><td>Motor / versión</td><td>PostgreSQL 18.3</td></tr>
+  <tr><td>Clase / almacenamiento</td><td><code>db.t4g.micro</code>, 20 GiB gp2, sin autoscaling de almacenamiento</td></tr>
+  <tr><td>Disponibilidad</td><td>Single-AZ (us-east-1a)</td></tr>
+  <tr><td>Usuario maestro</td><td><code>postgres</code> (contraseña auto-administrada, no versionada)</td></tr>
+  <tr><td>Base de datos inicial</td><td><code>blacklist</code></td></tr>
+  <tr><td>Red</td><td>VPC por defecto, <b>sin acceso público</b>, security group nuevo <code>blacklist-rds-sg</code>, puerto 5432</td></tr>
+  <tr><td>Endpoint</td><td><code>blacklist-db.caj6aqockm6d.us-east-1.rds.amazonaws.com:5432</code></td></tr>
+</table>
+<figure><img src="../capturas/01-rds-motor-plantilla.jpg"><figcaption>Figura 1. Motor PostgreSQL, método Full configuration y plantilla Free tier.</figcaption></figure>
+<figure><img src="../capturas/02-rds-settings.jpg"><figcaption>Figura 2. Versión del motor, identificador de la instancia y usuario maestro.</figcaption></figure>
+<figure><img src="../capturas/03-rds-instancia-almacenamiento.jpg"><figcaption>Figura 3. Clase de instancia db.t4g.micro y almacenamiento de 20 GiB.</figcaption></figure>
+<figure><img src="../capturas/04-rds-conectividad.jpg"><figcaption>Figura 4. Conectividad: VPC por defecto, sin acceso público y security group blacklist-rds-sg.</figcaption></figure>
+<figure><img src="../capturas/05-rds-config-adicional.jpg"><figcaption>Figura 5. Configuración adicional: base de datos inicial <code>blacklist</code>.</figcaption></figure>
+<figure><img src="../capturas/06-rds-creando.jpg"><figcaption>Figura 6. Base de datos en estado Creating.</figcaption></figure>
+<figure><img src="../capturas/07-rds-disponible.jpg"><figcaption>Figura 7. Base de datos disponible (Available).</figcaption></figure>
+<figure><img src="../capturas/08-rds-endpoint.jpg"><figcaption>Figura 8. Endpoint, puerto y security group de la instancia RDS.</figcaption></figure>
+<p>Una vez creado el ambiente de Beanstalk se agregó al security group de RDS una regla de entrada <b>TCP 5432 cuyo origen es el security group de las instancias de Beanstalk</b> (<code>sg-0f28005a04a27d7c3</code>), de modo que solo la aplicación puede conectarse a la base de datos.</p>
+<figure><img src="../capturas/18-rds-sg-regla-beanstalk.jpg"><figcaption>Figura 9. Regla de entrada PostgreSQL desde el security group de Beanstalk.</figcaption></figure>
+<figure><img src="../capturas/19-rds-sg-reglas-guardadas.jpg"><figcaption>Figura 10. Reglas de entrada guardadas en blacklist-rds-sg.</figcaption></figure>
+
+<h3 class="pb">1.b Configuración del proyecto en AWS Elastic Beanstalk</h3>
+<p>El repositorio incluye lo necesario para la plataforma Python: un <code>Procfile</code> que levanta gunicorn y el archivo <code>.ebextensions/01_environment.config</code> con el tipo de ambiente, el Auto Scaling de 3 a 6 instancias, el health check y el reporte de salud mejorado. El paquete se generó como zip desde el repositorio y se cargó desde la consola (<i>Create environment</i>).</p>
+<table>
+  <tr><th>Parámetro</th><th>Valor</th></tr>
+  <tr><td>Aplicación / ambiente</td><td><code>blacklist-app</code> / <code>blacklist-env</code></td></tr>
+  <tr><td>Dominio</td><td><code>blacklist-grupo16.us-east-1.elasticbeanstalk.com</code></td></tr>
+  <tr><td>Plataforma</td><td>Python 3.12 on 64bit Amazon Linux 2023 (4.13.10)</td></tr>
+  <tr><td>Código</td><td>Archivo local <code>blacklist-v1.0.0.zip</code>, etiqueta <code>v1.0.0</code></td></tr>
+  <tr><td>Variables de entorno</td><td><code>DATABASE_URL</code> (RDS), <code>JWT_SECRET_KEY</code>, <code>STATIC_API_TOKEN</code>; valores fuera del repositorio</td></tr>
+  <tr><td>Roles</td><td><code>aws-elasticbeanstalk-service-role</code> y perfil <code>aws-elasticbeanstalk-ec2-role</code></td></tr>
+  <tr><td>Capacidad</td><td>Load balanced, ALB dedicado público, Auto Scaling mínimo 3 / máximo 6, <code>t3.micro</code></td></tr>
+  <tr><td>Monitoreo</td><td>Enhanced health reporting</td></tr>
+  <tr><td>Política inicial de despliegue</td><td>All at once; actualizaciones administradas de plataforma desactivadas</td></tr>
+</table>
+<figure><img src="../capturas/09-eb-app-plataforma.jpg"><figcaption>Figura 11. Aplicación, ambiente, dominio y plataforma Python 3.12.</figcaption></figure>
+<figure><img src="../capturas/10-eb-codigo-version.jpg"><figcaption>Figura 12. Carga del código fuente (zip) con la etiqueta v1.0.0.</figcaption></figure>
+<figure><img src="../capturas/11-eb-variables-roles.jpg"><figcaption>Figura 13. Variables de entorno (valores omitidos) y roles de servicio.</figcaption></figure>
+<figure><img src="../capturas/12-eb-capacidad-3-6.jpg"><figcaption>Figura 14. Ambiente con balanceo de carga y Auto Scaling de 3 a 6 instancias.</figcaption></figure>
+<figure><img src="../capturas/15-eb-politica-despliegue.jpg"><figcaption>Figura 15. Política de despliegue inicial (All at once).</figcaption></figure>
+<figure><img src="../capturas/16-eb-creando-ambiente.jpg"><figcaption>Figura 16. Lanzamiento del ambiente.</figcaption></figure>
+<figure><img src="../capturas/20-eb-ambiente-ok.jpg"><figcaption>Figura 17. Ambiente blacklist-env en estado Ok con la versión v1.0.0.</figcaption></figure>
+<p>El ambiente quedó disponible en unos 3 minutos con 3 instancias. Luego se validaron los endpoints contra AWS:</p>
+<table>
+  <tr><th>Escenario</th><th>Resultado</th></tr>
+  <tr><td>POST /blacklists con email nuevo</td><td class="ok">201 Created</td></tr>
+  <tr><td>POST /blacklists con email duplicado</td><td class="ok">409 Conflict</td></tr>
+  <tr><td>POST /blacklists con UUID inválido</td><td class="ok">400 Bad Request</td></tr>
+  <tr><td>POST /blacklists sin token</td><td class="ok">401 Unauthorized</td></tr>
+  <tr><td>GET /blacklists/&lt;email bloqueado&gt;</td><td class="ok">200 <code>{"is_blacklisted": true, "blocked_reason": "Prueba desde AWS"}</code></td></tr>
+  <tr><td>GET /blacklists/&lt;email no registrado&gt;</td><td class="ok">200 <code>{"is_blacklisted": false, "blocked_reason": null}</code></td></tr>
+  <tr><td>GET /blacklists/&lt;email&gt; con token inválido</td><td class="ok">422 Unprocessable Entity</td></tr>
+</table>
+
+<h3 class="pb">1.c Configuración de los health checks en AWS Elastic Beanstalk</h3>
+<p>Se expuso el endpoint <code>GET /health</code>, que no requiere token ni consulta la base de datos y responde <code>200</code> con el estado, la versión desplegada y el host que atendió la solicitud. En el proceso <i>default</i> del Application Load Balancer se configuró:</p>
+<table>
+  <tr><th>Parámetro</th><th>Valor</th></tr>
+  <tr><td>Health check path</td><td><code>/health</code></td></tr>
+  <tr><td>Código HTTP esperado</td><td>200</td></tr>
+  <tr><td>Intervalo / timeout</td><td>15 s / 5 s</td></tr>
+  <tr><td>Healthy threshold / Unhealthy threshold</td><td>3 / 5</td></tr>
+  <tr><td>Deregistration delay</td><td>20 s</td></tr>
+  <tr><td>Health reporting</td><td>Enhanced</td></tr>
+</table>
+<figure><img src="../capturas/13-eb-health-check.jpg"><figcaption>Figura 18. Health check del proceso default del ALB en /health.</figcaption></figure>
+<figure><img src="../capturas/14-eb-monitoreo-enhanced.jpg"><figcaption>Figura 19. Reporte de salud mejorado (Enhanced).</figcaption></figure>
+<figure><img src="../capturas/17-eb-health-endpoint.jpg"><figcaption>Figura 20. Respuesta del endpoint /health a través del balanceador.</figcaption></figure>
+<figure><img src="../capturas/21-eb-overall-health.jpg"><figcaption>Figura 21. Salud general del ambiente: 100 % de respuestas 2xx.</figcaption></figure>
+<figure><img src="../capturas/22-eb-3-instancias-ok.jpg"><figcaption>Figura 22. Enhanced instance health: las 3 instancias en estado Ok.</figcaption></figure>
+
+<!-- ============ 2. ESTRATEGIAS ============ -->
+<h2 class="pb">2. Estrategias de despliegue</h2>
+<p>Se ejecutaron cuatro estrategias que requieren más de una instancia, sobre el Auto Scaling group de 3 a 6 instancias. Cada estrategia desplegó una versión nueva del mismo código (v1.0.1 a v1.0.4). La versión viaja en el archivo <code>VERSION</code> del paquete y se expone en <code>GET /health</code>, lo que permite saber qué instancia y qué versión responde cada solicitud.</p>
+<h4>Método de validación (común a las cuatro estrategias)</h4>
+<ol>
+  <li>Antes de desplegar se registraron los IDs de las instancias del ambiente.</li>
+  <li>Durante el despliegue, un monitor (<code>scripts/monitor-health.sh</code>) consultó <code>GET /health</code> cada segundo y guardó la hora, el código HTTP, la versión y la instancia que respondió (<code>entregas/monitoreo/*.log</code>).</li>
+  <li>En la consola se siguieron las pestañas <i>Events</i> y <i>Health &amp; monitoring</i> (columna <i>Deployment ID</i>) y, para Immutable, EC2 → Instances.</li>
+  <li>El <b>tiempo total</b> se tomó de los eventos de Beanstalk, desde <i>"Environment update is starting."</i> hasta <i>"Environment update completed successfully."</i> (UTC).</li>
+  <li>Al terminar se compararon los IDs de las instancias con los iniciales.</li>
+</ol>
+
+<h3>Resumen</h3>
+<table>
+  <tr><th>#</th><th>Estrategia</th><th>Versión</th><th>a. Instancias</th><th>c. Tiempo</th><th>d. Iniciales / nuevas</th><th>Errores observados</th></tr>
+  <tr><td>1</td><td>All at once</td><td>1.0.0 → 1.0.1</td><td>3</td><td>1 min 01 s</td><td>Iniciales</td><td class="bad">3 × HTTP 502 (~4 s)</td></tr>
+  <tr><td>2</td><td>Rolling (lote fijo 1)</td><td>1.0.1 → 1.0.2</td><td>3 (2 en servicio)</td><td>9 min 18 s</td><td>Iniciales</td><td class="ok">0 errores HTTP</td></tr>
+  <tr><td>3</td><td>Rolling with additional batch (lote 1)</td><td>1.0.2 → 1.0.3</td><td>3 → 4 → 3</td><td>10 min 26 s</td><td>Mixto (1 nueva + 2 iniciales)</td><td class="ok">0 errores HTTP</td></tr>
+  <tr><td>4</td><td>Immutable</td><td>1.0.3 → 1.0.4</td><td>3 → 6 → 3</td><td>18 min 06 s</td><td>Nuevas</td><td class="ok">0 errores HTTP</td></tr>
+</table>
+
+<!-- ---- 2.1 ---- -->
+<h3 class="pb">2.1 All at once (v1.0.0 → v1.0.1)</h3>
+<table class="kv">
+  <tr><td>a. Instancias utilizadas</td><td>3. Las tres instancias del Auto Scaling group se actualizan simultáneamente; no se lanzan instancias adicionales.</td></tr>
+  <tr><td>b. Validación</td><td>Monitor de <code>/health</code> (147 peticiones) y Health &amp; monitoring, donde las 3 instancias pasaron juntas al <i>Deployment ID 2</i>. La última respuesta 1.0.0 y la primera 1.0.1 estuvieron separadas por ~6 s sin respuestas válidas; nunca convivieron ambas versiones.</td></tr>
+  <tr><td>c. Tiempo total</td><td><b>1 min 01 s</b> (02:21:03.9 → 02:22:04.6 UTC)</td></tr>
+  <tr><td>d. Instancias iniciales o nuevas</td><td><b>Iniciales</b>: <code>i-0acd6289032d5be16</code>, <code>i-0f88f75aab5964f23</code>, <code>i-067889e0968bd9361</code>, las mismas antes y después.</td></tr>
+</table>
+<h4>e. Capturas</h4>
+<figure><img src="../capturas/estrategias/1-all-at-once/01-politica-all-at-once.jpg"><figcaption>Figura 23. Política de despliegue All at once.</figcaption></figure>
+<figure><img src="../capturas/estrategias/1-all-at-once/02-upload-v1.0.1.jpg"><figcaption>Figura 24. Carga y despliegue de la versión v1.0.1 (política AllAtOnce, 3 instancias).</figcaption></figure>
+<figure><img src="../capturas/estrategias/1-all-at-once/03-health-durante.jpg"><figcaption>Figura 25. Las 3 instancias con el Deployment ID 2 al mismo tiempo.</figcaption></figure>
+<figure><img src="../capturas/estrategias/1-all-at-once/04-eventos-completado.jpg"><figcaption>Figura 26. Eventos del despliegue, de inicio a fin.</figcaption></figure>
+<h4>f. Hallazgos</h4>
+<ul>
+  <li>Es la estrategia más rápida, pero <b>interrumpe el servicio</b>: hubo 3 respuestas <code>502 Bad Gateway</code> consecutivas (~4 s) mientras gunicorn se reiniciaba en todas las instancias a la vez.</li>
+  <li>No hay mezcla de versiones: desde el punto de vista del cliente el cambio es atómico.</li>
+  <li>No necesita capacidad adicional, pero un error en la versión nueva afectaría al 100 % de las instancias, y el rollback implica otro despliegue completo.</li>
+</ul>
+
+<!-- ---- 2.2 ---- -->
+<h3 class="pb">2.2 Rolling, lote fijo de 1 instancia (v1.0.1 → v1.0.2)</h3>
+<table class="kv">
+  <tr><td>a. Instancias utilizadas</td><td>3. Se actualiza 1 instancia por lote (3 lotes); en cada lote solo 2 instancias atienden tráfico. No se lanzan instancias nuevas.</td></tr>
+  <tr><td>b. Validación</td><td>Monitor de <code>/health</code> (514 peticiones), eventos <i>"Batch N: Starting application deployment on instance(s)"</i> y Health &amp; monitoring, donde se ve una instancia en <i>Pending application update</i> y luego con el <i>Deployment ID 4</i> mientras las otras seguían en el 3. En la ventana de mezcla el balanceador devolvió 106 respuestas 1.0.1 y 104 respuestas 1.0.2. Orden de los lotes: <code>i-0acd6289032d5be16</code> → <code>i-0f88f75aab5964f23</code> → <code>i-067889e0968bd9361</code>.</td></tr>
+  <tr><td>c. Tiempo total</td><td><b>9 min 18 s</b> (02:27:57.1 → 02:37:15.3 UTC)</td></tr>
+  <tr><td>d. Instancias iniciales o nuevas</td><td><b>Iniciales</b> (los mismos 3 IDs antes y después).</td></tr>
+</table>
+<h4>e. Capturas</h4>
+<figure><img src="../capturas/estrategias/2-rolling/01-politica-rolling-batch1.jpg"><figcaption>Figura 27. Política Rolling con tamaño de lote fijo de 1.</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/02-revision-cambios.jpg"><figcaption>Figura 28. Revisión de cambios: AllAtOnce → Rolling, Percentage → Fixed, 100 → 1.</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/03-upload-v1.0.2.jpg"><figcaption>Figura 29. Despliegue de la versión v1.0.2 con la política Rolling.</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/05-health-lote1-actualizando.jpg"><figcaption>Figura 30. Lote 1: una instancia en "Pending application update" y dos atendiendo.</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/06-health-versiones-mezcladas.jpg"><figcaption>Figura 31. Versiones mezcladas: una instancia con el Deployment ID 4 y dos con el 3.</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/08-eventos-lotes.jpg"><figcaption>Figura 32. Eventos por lote (Batch 2 y Batch 3).</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/07-eventos-completado.jpg"><figcaption>Figura 33. Finalización del despliegue ("took 9 minutes").</figcaption></figure>
+<figure><img src="../capturas/estrategias/2-rolling/09-health-final.jpg"><figcaption>Figura 34. Estado final: las 3 instancias originales con el Deployment ID 4.</figcaption></figure>
+<h4>f. Hallazgos</h4>
+<ul>
+  <li><b>Sin caída de servicio:</b> 0 respuestas 5xx; solo 3 timeouts aislados de 3 s (0,6 %), asociados a la salida y entrada de instancias del balanceador.</li>
+  <li><b>Capacidad reducida</b> al 66 % durante todo el despliegue (2 de 3 instancias).</li>
+  <li><b>Conviven dos versiones</b> durante ~5 min: los clientes reciben respuestas de v1.0.1 y v1.0.2 alternadamente, lo que exige que las versiones sean compatibles (API y esquema de BD).</li>
+  <li>Es ~9 veces más lenta que All at once: cada lote tarda ~2 min 40 s, la mayor parte esperando que el ALB marque la instancia como sana (3 checks de 15 s más el desregistro). Beanstalk registró un estado <i>Degraded</i> transitorio mientras la instancia del lote 3 se registraba.</li>
+</ul>
+
+<!-- ---- 2.3 ---- -->
+<h3 class="pb">2.3 Rolling with additional batch, lote fijo de 1 (v1.0.2 → v1.0.3)</h3>
+<table class="kv">
+  <tr><td>a. Instancias utilizadas</td><td>3 iniciales + <b>1 adicional</b> = <b>4</b> durante el despliegue; al final vuelven a ser 3. La capacidad en servicio nunca bajó de 3.</td></tr>
+  <tr><td>b. Validación</td><td>Monitor de <code>/health</code> (680 peticiones; apareció un cuarto host, <code>ip-172-31-88-76</code>, respondiendo 1.0.3), eventos y Health &amp; monitoring con <b>4 instancias</b>: la nueva <code>i-0be989469ee779a06</code> en <i>Pending</i> y luego con el <i>Deployment ID 5</i>, mientras las originales seguían en el 4.</td></tr>
+  <tr><td>c. Tiempo total</td><td><b>10 min 26 s</b> (02:44:05.7 → 02:54:32.3 UTC). El ambiente volvió a Green a las 02:56:52 UTC, tras desregistrar la instancia sobrante.</td></tr>
+  <tr><td>d. Instancias iniciales o nuevas</td><td><b>Mixto.</b> Lote 1: se lanza la instancia nueva <code>i-0be989469ee779a06</code>. Lotes 2 y 3: se actualizan in-place <code>i-0acd6289032d5be16</code> e <code>i-067889e0968bd9361</code>. Al final se termina la sobrante <code>i-0f88f75aab5964f23</code>, una inicial que seguía con v1.0.2.</td></tr>
+</table>
+<h4>e. Capturas</h4>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/01-politica-rolling-additional-batch.jpg"><figcaption>Figura 35. Política Rolling with additional batch, lote fijo de 1.</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/03-upload-v1.0.3.jpg"><figcaption>Figura 36. Despliegue de la versión v1.0.3 (RollingWithAdditionalBatch).</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/04-health-4-instancias-lote-extra.jpg"><figcaption>Figura 37. Lote adicional: 4 instancias, la nueva en estado Pending.</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/06-health-4-instancias-versiones-mezcladas.jpg"><figcaption>Figura 38. La instancia nueva atendiendo con el Deployment ID 5 junto a las 3 originales.</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/08-eventos-lote-adicional.jpg"><figcaption>Figura 39. Eventos: lanzamiento del lote adicional e inicio del lote 2.</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/07-eventos-terminacion-sobrante.jpg"><figcaption>Figura 40. Eventos: terminación de la instancia sobrante y fin del despliegue.</figcaption></figure>
+<figure><img src="../capturas/estrategias/3-rolling-additional-batch/09-health-final.jpg"><figcaption>Figura 41. Estado final: 3 instancias (1 nueva y 2 originales) con el Deployment ID 5.</figcaption></figure>
+<h4>f. Hallazgos</h4>
+<ul>
+  <li><b>Sin caída y sin pérdida de capacidad:</b> el lote extra compensa la instancia que sale de servicio en cada lote. 0 respuestas 5xx; 3 timeouts aislados (0,4 %).</li>
+  <li>Tarda más que Rolling porque suma ~1 min 15 s para lanzar la instancia EC2 nueva antes del primer lote.</li>
+  <li><b>Costo adicional temporal</b> de una instancia durante ~10 min.</li>
+  <li>Beanstalk no retira la instancia nueva: termina una <b>original</b>, la que no se actualizó. El ambiente final mezcla instancias nuevas y viejas.</li>
+  <li>Al finalizar, la salud pasó brevemente a <i>Degraded/Severe</i> mientras la instancia terminada se desregistraba del ALB (<i>draining</i>), sin afectar a los clientes.</li>
+  <li>Como en Rolling, conviven dos versiones durante el despliegue.</li>
+</ul>
+
+<!-- ---- 2.4 ---- -->
+<h3 class="pb">2.4 Immutable (v1.0.3 → v1.0.4)</h3>
+<table class="kv">
+  <tr><td>a. Instancias utilizadas</td><td>3 iniciales + <b>3 nuevas</b> en un Auto Scaling group temporal: hasta <b>6 instancias</b> en paralelo (3 → 4 → 6 → 3).</td></tr>
+  <tr><td>b. Validación</td><td>Monitor de <code>/health</code> (894 peticiones; respondieron <b>6 hosts distintos</b>), eventos y EC2 → Instances, donde se ven primero 4 y luego 6 instancias <i>running</i>, y al final las 3 originales en <i>Terminated</i>. En Health &amp; monitoring las 3 instancias finales tienen el <i>Deployment ID 6</i>.</td></tr>
+  <tr><td>c. Tiempo total</td><td><b>18 min 06 s</b> (03:03:28.7 → 03:21:34.7 UTC)</td></tr>
+  <tr><td>d. Instancias iniciales o nuevas</td><td><b>Nuevas.</b> Iniciales <code>i-0be989469ee779a06</code>, <code>i-0acd6289032d5be16</code> e <code>i-067889e0968bd9361</code> (terminadas). Finales <code>i-0162ce24b7bf06889</code>, <code>i-0028d353a4144f877</code> e <code>i-0a94de034ecb5cdbd</code>.</td></tr>
+</table>
+<p>Secuencia observada: (1) se crea un ASG temporal y se lanza <b>1 instancia de prueba</b>; (2) cuando pasa los health checks se lanzan las 2 restantes; (3) se espera a que las 3 estén sanas en el ALB, se mueven al ASG permanente y se ejecuta la configuración post-despliegue; (4) se terminan las 3 instancias viejas y el ASG temporal.</p>
+<h4>e. Capturas</h4>
+<figure><img src="../capturas/estrategias/4-immutable/01-politica-immutable.jpg"><figcaption>Figura 42. Política de despliegue Immutable.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/03-upload-v1.0.4.jpg"><figcaption>Figura 43. Despliegue de la versión v1.0.4 con la política Immutable.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/04-ec2-instancia-verificacion.jpg"><figcaption>Figura 44. EC2: instancia de verificación (i-0162ce24b7bf06889) junto a las 3 originales.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/05-ec2-6-instancias.jpg"><figcaption>Figura 45. EC2: 6 instancias en ejecución durante el despliegue inmutable.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/06-health-nuevas-y-viejas-saliendo.jpg"><figcaption>Figura 46. Instancias nuevas con el Deployment ID 6 y las originales saliendo.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/07-eventos-immutable.jpg"><figcaption>Figura 47. Eventos del despliegue inmutable.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/08-ec2-viejas-terminadas.jpg"><figcaption>Figura 48. EC2: instancias originales terminadas y nuevas en ejecución.</figcaption></figure>
+<figure><img src="../capturas/estrategias/4-immutable/09-health-final.jpg"><figcaption>Figura 49. Estado final: 3 instancias nuevas con el Deployment ID 6.</figcaption></figure>
+<h4>f. Hallazgos</h4>
+<ul>
+  <li><b>Sin caída ni reducción de capacidad:</b> 0 respuestas 5xx; 3 timeouts aislados (0,3 %). Las instancias viejas atendieron hasta que las nuevas estuvieron sanas.</li>
+  <li>Es la estrategia <b>más lenta</b> (~18 min): lanzar instancias EC2 nuevas, verificar primero una de prueba y luego terminar las viejas toma tiempo.</li>
+  <li><b>Mayor costo temporal</b>: el doble de instancias (6) durante el despliegue; hay que considerar los límites de la cuenta.</li>
+  <li><b>Rollback más seguro</b>: si la instancia de prueba falla, solo se descarta el ASG temporal y las instancias originales nunca se tocan.</li>
+  <li>Durante la transición conviven brevemente v1.0.3 y v1.0.4, porque las nuevas se registran en el mismo ALB antes de retirar las viejas.</li>
+  <li>Las instancias finales quedan recién creadas, lo que evita la deriva de configuración de despliegues in-place anteriores.</li>
+</ul>
+
+<!-- ============ COMPARATIVO ============ -->
+<h2 class="pb">3. Comparativo y conclusiones</h2>
+<table>
+  <tr><th>Criterio</th><th>All at once</th><th>Rolling</th><th>Rolling + lote adicional</th><th>Immutable</th></tr>
+  <tr><td>Tiempo total</td><td><b>1 min 01 s</b></td><td>9 min 18 s</td><td>10 min 26 s</td><td>18 min 06 s</td></tr>
+  <tr><td>Caída del servicio</td><td class="bad">Sí (~4 s, HTTP 502)</td><td class="ok">No</td><td class="ok">No</td><td class="ok">No</td></tr>
+  <tr><td>Capacidad mínima</td><td>0 %</td><td>66 %</td><td>100 %</td><td>100 %</td></tr>
+  <tr><td>Instancias máximas</td><td>3</td><td>3</td><td>4</td><td>6</td></tr>
+  <tr><td>Mezcla de versiones</td><td>No</td><td>Sí</td><td>Sí</td><td>Sí (breve)</td></tr>
+  <tr><td>Instancias finales</td><td>Iniciales</td><td>Iniciales</td><td>Mixtas</td><td>Nuevas</td></tr>
+  <tr><td>Costo extra</td><td>Ninguno</td><td>Ninguno</td><td>1 instancia ~10 min</td><td>3 instancias ~15 min</td></tr>
+  <tr><td>Rollback</td><td>Redesplegar todo</td><td>Redesplegar</td><td>Redesplegar</td><td>Descartar el ASG temporal</td></tr>
+</table>
+<ul>
+  <li><b>All at once</b> conviene en ambientes de desarrollo o cuando se acepta una breve indisponibilidad.</li>
+  <li><b>Rolling</b> evita la caída sin costo extra, a cambio de capacidad reducida y versiones mezcladas.</li>
+  <li><b>Rolling with additional batch</b> mantiene la capacidad completa con un costo extra pequeño; es útil en producción con tráfico constante.</li>
+  <li><b>Immutable</b> es la más segura (no toca las instancias en servicio y el rollback es inmediato), a cambio de ser la más lenta y costosa.</li>
+</ul>
+<p class="note">Los logs completos del monitor de <code>/health</code> de cada estrategia están en <code>entregas/monitoreo/</code> del repositorio, y el detalle de cada estrategia en <code>entregas/estrategias-despliegue.md</code>.</p>
+
+</body>
+</html>
