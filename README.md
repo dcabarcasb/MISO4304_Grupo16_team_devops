@@ -89,12 +89,23 @@ El microservicio queda disponible en `http://localhost:5000`.
 
 ## Pruebas
 
-Las pruebas requieren una base de datos PostgreSQL disponible (se recomienda una
-base separada, por ejemplo `blacklist_test`). Configure `TEST_DATABASE_URL` si
-desea usar otra cadena de conexion:
+Las pruebas unitarias cubren todos los endpoints de la API y por defecto usan
+SQLite en memoria, por lo que no requieren un servidor de base de datos:
 
 ```bash
-set TEST_DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/blacklist_test
+pytest -v
+```
+
+| Archivo                   | Endpoint                 | Escenarios                                                                 |
+| ------------------------- | ------------------------ | -------------------------------------------------------------------------- |
+| `tests/test_health.py`    | `GET /health`            | Responde sin token, version configurada, ignora encabezado Authorization   |
+| `tests/test_blacklist.py` | `POST /blacklists`       | 401 sin token, 403 token invalido, 201 creacion y persistencia (IP), 409 duplicado (incluye mayusculas), 400 por body vacio, email/UUID invalidos o motivo > 255, motivo opcional |
+| `tests/test_blacklist.py` | `GET /blacklists/<email>`| 401 sin token, 403 token invalido, email bloqueado, no bloqueado, busqueda sin distinguir mayusculas |
+
+Para ejecutarlas contra PostgreSQL configure `TEST_DATABASE_URL`:
+
+```bash
+export TEST_DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/blacklist_test
 pytest -v
 ```
 
