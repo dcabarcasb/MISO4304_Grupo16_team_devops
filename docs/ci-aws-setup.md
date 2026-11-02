@@ -61,6 +61,9 @@ de lista negra global de emails.
      *"No Branch [main] found for FullRepositoryName"* y el trigger de push
      nunca se activa.
    - **Change detection:** GitHub webhooks (por defecto) → se dispara en cada push a `main`.
+   - Verificar que la accion Source quede con `DetectChanges: true` (ver la
+     configuracion con `aws codepipeline get-pipeline`); con `false` los push
+     no inician el pipeline.
 4. **Build stage:** provider **AWS CodeBuild** → proyecto `grupo16-blacklist-build`.
 5. **Deploy stage:** **Skip deploy stage** (sin CD, según el enunciado).
 6. Create. La primera ejecución inicia automáticamente.
