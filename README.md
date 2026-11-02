@@ -114,9 +114,11 @@ pytest -v
 El archivo `buildspec.yml` define el build que ejecuta AWS CodeBuild en cada
 commit a `main` (disparado por AWS CodePipeline):
 
-1. **install:** Python 3.11 e instalacion de `requirements.txt`.
+1. **install:** Python 3.12 e instalacion de `requirements.txt` (imagen
+   `aws/codebuild/amazonlinux-x86_64-standard:5.0`).
 2. **build:** `pytest` con reporte JUnit (visible en la pestaña *Reports* de
-   CodeBuild). Si alguna prueba falla, el build falla y no se genera artefacto.
+   CodeBuild). Si alguna prueba falla, el build se aborta (`on-failure: ABORT`):
+   no se ejecuta `post_build` ni se sube artefacto.
 3. **artifacts:** ZIP listo para Elastic Beanstalk (`app/`, `.ebextensions/`,
    `Procfile`, `requirements.txt`, `run.py`, `VERSION`) almacenado en S3. No hay despliegue
    automatico (solo CI).
