@@ -56,7 +56,7 @@ class BlacklistResource(Resource):
         return {
             "message": f"Email {email} was added to the global blacklist.",
             "created": True,
-        }, 201
+        }, 200
 
 
 class BlacklistLookupResource(Resource):
