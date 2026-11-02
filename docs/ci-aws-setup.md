@@ -55,7 +55,11 @@ de lista negra global de emails.
 2. **Service role:** Existing role → `LabRole` (o crear uno nuevo).
 3. **Source stage:**
    - Provider **GitHub (via GitHub App)** → conexión `grupo16-github`.
-   - Repositorio `MISO4304_Grupo16_team_devops`, rama `main`.
+   - Repositorio **`dcabarcasb/MISO4304_Grupo16_team_devops`** (formato
+     `owner/repo`), rama `main`. Si se pega la URL
+     (`https://github.com/...git`) la etapa Source falla con
+     *"No Branch [main] found for FullRepositoryName"* y el trigger de push
+     nunca se activa.
    - **Change detection:** GitHub webhooks (por defecto) → se dispara en cada push a `main`.
 4. **Build stage:** provider **AWS CodeBuild** → proyecto `grupo16-blacklist-build`.
 5. **Deploy stage:** **Skip deploy stage** (sin CD, según el enunciado).
