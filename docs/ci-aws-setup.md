@@ -32,7 +32,12 @@ de lista negra global de emails.
 2. **Project name:** `grupo16-blacklist-build`.
 3. **Source:** GitHub → conexión `grupo16-github` → repositorio `MISO4304_Grupo16_team_devops` → rama `main`.
 4. **Environment:**
-   - Managed image, OS **Ubuntu**, runtime **Standard**, imagen `aws/codebuild/standard:7.0` (incluye Python 3.11).
+   - Provisioning **On-demand**, environment **Container**, Managed image,
+     OS **Amazon Linux**, runtime **Standard**, imagen
+     `aws/codebuild/amazonlinux-x86_64-standard:5.0` (soporta Python 3.12).
+   - **No** usar la imagen `aws/codebuild/ami/amazonlinux-x86_64-base` (entorno
+     EC2): ignora `runtime-versions` y trae Python 3.14 sin `sqlite3`, por lo
+     que todas las pruebas fallan con `No module named '_sqlite3'`.
    - **Privileged:** desactivado (no se usa Docker).
    - **Service role:** **Existing role → `LabRole`** (AWS Academy). Si `LabRole` no permite escribir en S3, use "New service role".
 5. **Buildspec:** "Use a buildspec file" → ruta `buildspec.yml` (debe estar publicado en `main`).
