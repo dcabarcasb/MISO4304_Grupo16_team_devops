@@ -1,0 +1,13 @@
+{
+    "family": "grupo16-blacklist",
+    "revision": 2,
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::565828850450:role/grupo16-ecs-task-execution-role",
+    "containerName": "blacklist",
+    "secrets": [
+        "DATABASE_URL",
+        "JWT_SECRET_KEY",
+        "STATIC_API_TOKEN"
+    ]
+}

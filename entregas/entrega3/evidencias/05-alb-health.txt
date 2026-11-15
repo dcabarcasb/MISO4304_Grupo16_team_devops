@@ -1,0 +1,3 @@
+GET http://grupo16-alb-1185215880.us-east-1.elb.amazonaws.com/health
+{"status": "ok", "version": "1.2.0", "host": "ip-172-31-93-131.ec2.internal"}
+

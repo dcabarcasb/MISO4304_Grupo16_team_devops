@@ -1,0 +1,7 @@
+{
+    "status": "ACTIVE",
+    "desired": 2,
+    "running": 2,
+    "taskDefinition": "arn:aws:ecs:us-east-1:565828850450:task-definition/grupo16-blacklist:2",
+    "controller": "ECS"
+}

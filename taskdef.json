@@ -1,0 +1,34 @@
+{
+  "family": "grupo16-blacklist",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::565828850450:role/grupo16-ecs-task-execution-role",
+  "containerDefinitions": [
+    {
+      "name": "blacklist",
+      "image": "<IMAGE1_NAME>",
+      "essential": true,
+      "portMappings": [
+        { "containerPort": 8000, "protocol": "tcp" }
+      ],
+      "secrets": [
+        { "name": "DATABASE_URL", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/database_url" },
+        { "name": "JWT_SECRET_KEY", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/jwt_secret" },
+        { "name": "STATIC_API_TOKEN", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/static_token" }
+      ],
+      "environment": [
+        { "name": "AUTO_CREATE_TABLES", "value": "1" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/grupo16-blacklist",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
