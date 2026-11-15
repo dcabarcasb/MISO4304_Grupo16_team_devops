@@ -1,0 +1,15 @@
+Pipeline: grupo16-blacklist-pipeline (V2, etapas Source + Build)
+
+Ejecucion 694681af-5383-4bfe-a4ed-484432d34859
+  estado: Succeeded
+  commit: 7c8ac84270df128497beada3af2748256895f654
+  inicio: 2026-11-15T15:17:20-05:00
+
+Ejecucion f958c8d1-7d5f-4765-ba30-70f36be858c8
+  estado: Succeeded
+  commit: 184c18a13758073bc42a2a0176bfb5f17baa6855
+  disparador: WebhookV2 (PUSH_BRANCH en main)
+
+Estado actual de las etapas:
+  Source  Succeeded
+  Build   Succeeded
