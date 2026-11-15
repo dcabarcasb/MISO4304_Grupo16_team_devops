@@ -226,12 +226,36 @@ Los archivos de la Parte 2 se commitean antes de agregar la etapa Deploy. No se
 versionan `.env`, contraseñas ni tokens; solo IDs de cuenta, ARNs y rutas de
 parámetros SSM.
 
-## Nota sobre la Parte 3
+## Parte 3 — Entrega continua con CodeDeploy (blue/green)
 
-El servicio manual usa el controlador de despliegue `ECS` (rolling update). Para
-el blue/green de CodeDeploy se necesita un servicio con controlador
-`CODE_DEPLOY`, además de la aplicación y el deployment group de CodeDeploy.
+### 3.1 Habilitar CodeDeploy
 
-En esta cuenta `CodeDeploy` responde `SubscriptionRequiredException`
-(`aws deploy list-applications`), por lo que la Parte 3 no puede completarse
-hasta que el servicio esté habilitado en la cuenta/laboratorio.
+La cuenta estaba en el **Free plan** de AWS, que no incluye CodeDeploy (la
+consola redirige a "Complete your account setup" y la CLI responde
+`SubscriptionRequiredException`). Se pasó la cuenta a plan pagado
+(*Upgrade plan*); los créditos restantes se conservan.
+
+### 3.2 Recursos creados
+
+| Recurso | Valor |
+| --- | --- |
+| Target group green | `grupo16-tg-green` (HTTP 8000, `ip`, `/health`) |
+| Deregistration delay (blue y green) | 30 s |
+| Rol de CodeDeploy | `grupo16-codedeploy-ecs-role` + `AWSCodeDeployRoleForECS` |
+| Servicio ECS | `grupo16-blacklist-bg` (controlador `CODE_DEPLOY`, 2 tareas, `grupo16-tg-blue`) |
+| Aplicación CodeDeploy | `grupo16-blacklist-app` (ECS) |
+| Deployment group | `grupo16-blacklist-dg`: blue/green con control de tráfico, `CodeDeployDefault.ECSAllAtOnce`, listener prod puerto 80, terminar las tareas originales 1 min después, rollback automático si falla |
+| Política del rol del pipeline | inline `grupo16-codedeploy-ecs-deploy` (CodeDeploy, `ecs:RegisterTaskDefinition`, `iam:PassRole` del rol de ejecución) |
+| Etapa Deploy del pipeline | proveedor *Amazon ECS (Blue/Green)* (`CodeDeployToECS`) con `taskdef.json`, `appspec.yaml` e `imageDetail.json` del `BuildArtifact` (`IMAGE1_NAME`) |
+
+El servicio manual `grupo16-blacklist-service` (controlador `ECS`) quedó con
+`desiredCount=0`: el controlador de un servicio no se puede cambiar, por eso se
+creó uno nuevo con `CODE_DEPLOY`.
+
+### 3.3 Flujo
+
+`push a main` → **Source** (GitHub) → **Build** (pruebas → `docker build/push`
+a ECR con tag = SHA → artefactos) → **Deploy** (CodePipeline registra una
+revisión de `taskdef.json` con la nueva imagen; CodeDeploy crea el task set
+de reemplazo en el target group libre, espera que esté sano, mueve el listener
+del ALB y termina el task set original).
