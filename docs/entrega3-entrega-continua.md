@@ -212,8 +212,8 @@ igual al SHA del commit; artefacto con `appspec.yaml`, `taskdef.json` e
 `imageDetail.json`:
 
 ```bash
-aws s3 cp s3://grupo16-blacklist-artifacts/blacklist-build.zip . 
-unzip -p blacklist-build.zip imageDetail.json
+aws s3 cp s3://grupo16-blacklist-artifacts/blacklist-build . 
+unzip -p blacklist-build imageDetail.json
 # {"ImageURI":"565828850450.dkr.ecr.us-east-1.amazonaws.com/grupo16-blacklist:<sha>"}
 ```
 
