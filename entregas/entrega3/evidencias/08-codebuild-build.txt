@@ -1,0 +1,23 @@
+Build:      grupo16-blacklist-build:727196ff-d572-4176-a741-2397b3e905e8
+Estado:     SUCCEEDED
+Inicio:     2026-11-15T15:17:24-05:00
+Fin:        2026-11-15T15:18:25-05:00
+Commit:     7c8ac84270df128497beada3af2748256895f654 (CODEBUILD_RESOLVED_SOURCE_VERSION)
+
+Reporte JUnit (grupo16-blacklist-build-pytest-reports):
+  total: 19 | SUCCEEDED: 19 | FAILED: 0 | SKIPPED: 0 | ERROR: 0
+  duracion: 465 ms
+
+Log de CodeBuild:
+  ============================== 19 passed in 0.46s ==============================
+  Pushed 565828850450.dkr.ecr.us-east-1.amazonaws.com/grupo16-blacklist:7c8ac84270df128497beada3af2748256895f654
+
+Imagen en ECR:
+  tags: ["7c8ac84270df128497beada3af2748256895f654"]
+  pushedAt: 2026-11-15T15:18:28.009000-05:00
+  size: 58842400 bytes
+
+Artefacto S3:
+  arn:aws:s3:::grupo16-blacklist-artifacts/blacklist-build
+  contenido: appspec.yaml, taskdef.json, imageDetail.json
+  imageDetail.json: {"ImageURI":"565828850450.dkr.ecr.us-east-1.amazonaws.com/grupo16-blacklist:7c8ac84270df128497beada3af2748256895f654"}

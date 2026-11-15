@@ -1,0 +1,44 @@
+{
+    "env": {
+        "type": "LINUX_CONTAINER",
+        "image": "aws/codebuild/amazonlinux-x86_64-standard:5.0",
+        "computeType": "BUILD_GENERAL1_MEDIUM",
+        "environmentVariables": [
+            {
+                "name": "TEST_DATABASE_URL",
+                "value": "sqlite:///./test_ci.db",
+                "type": "PLAINTEXT"
+            },
+            {
+                "name": "ECR_REPO_NAME",
+                "value": "grupo16-blacklist",
+                "type": "PLAINTEXT"
+            }
+        ],
+        "privilegedMode": true,
+        "imagePullCredentialsType": "CODEBUILD"
+    },
+    "artifacts": {
+        "type": "S3",
+        "location": "grupo16-blacklist-artifacts",
+        "path": "",
+        "namespaceType": "NONE",
+        "name": "blacklist-build",
+        "packaging": "ZIP",
+        "overrideArtifactName": false,
+        "encryptionDisabled": false
+    },
+    "source": {
+        "type": "GITHUB",
+        "location": "https://github.com/dcabarcasb/MISO4304_Grupo16_team_devops.git",
+        "gitCloneDepth": 1,
+        "gitSubmodulesConfig": {
+            "fetchSubmodules": false
+        },
+        "buildspec": "buildspec.yml",
+        "reportBuildStatus": false,
+        "insecureSsl": false
+    },
+    "role": "arn:aws:iam::565828850450:role/service-role/codebuild-grupo16-blacklist-build-service-role"
+}
+AmazonEC2ContainerRegistryPowerUser	CodeBuildBasePolicy-grupo16-blacklist-build-us-east-1	CodeBuildCodeConnectionsSourceCredentialsPolicy-grupo16-blacklist-build-us-east-1-565828850450
