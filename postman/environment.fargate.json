@@ -1,0 +1,25 @@
+{
+  "id": "5b7e2d14-9c3a-4f0e-8a61-blacklist-fargate",
+  "name": "Blacklist Microservice - AWS Fargate",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://grupo16-alb-1185215880.us-east-1.elb.amazonaws.com",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "paste-token-generated-from-ssm-secrets",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "email",
+      "value": "blocked@example.com",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}
