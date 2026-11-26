@@ -1,7 +1,9 @@
 {
   "family": "grupo16-blacklist",
   "networkMode": "awsvpc",
-  "requiresCompatibilities": ["FARGATE"],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
   "cpu": "256",
   "memory": "512",
   "executionRoleArn": "arn:aws:iam::565828850450:role/grupo16-ecs-task-execution-role",
@@ -11,15 +13,50 @@
       "image": "<IMAGE1_NAME>",
       "essential": true,
       "portMappings": [
-        { "containerPort": 8000, "protocol": "tcp" }
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
       ],
       "secrets": [
-        { "name": "DATABASE_URL", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/database_url" },
-        { "name": "JWT_SECRET_KEY", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/jwt_secret" },
-        { "name": "STATIC_API_TOKEN", "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/static_token" }
+        {
+          "name": "DATABASE_URL",
+          "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/database_url"
+        },
+        {
+          "name": "JWT_SECRET_KEY",
+          "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/jwt_secret"
+        },
+        {
+          "name": "STATIC_API_TOKEN",
+          "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/static_token"
+        },
+        {
+          "name": "NEW_RELIC_LICENSE_KEY",
+          "valueFrom": "arn:aws:ssm:us-east-1:565828850450:parameter/grupo16/blacklist/newrelic_license_key"
+        }
       ],
       "environment": [
-        { "name": "AUTO_CREATE_TABLES", "value": "1" }
+        {
+          "name": "AUTO_CREATE_TABLES",
+          "value": "1"
+        },
+        {
+          "name": "NEW_RELIC_APP_NAME",
+          "value": "grupo16-blacklist-prod"
+        },
+        {
+          "name": "NEW_RELIC_DISTRIBUTED_TRACING_ENABLED",
+          "value": "true"
+        },
+        {
+          "name": "NEW_RELIC_LOG",
+          "value": "stdout"
+        },
+        {
+          "name": "NEW_RELIC_LOG_LEVEL",
+          "value": "info"
+        }
       ],
       "logConfiguration": {
         "logDriver": "awslogs",
