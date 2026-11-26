@@ -71,6 +71,9 @@ PostgreSQL (por ejemplo `blacklist`) antes de continuar.
 | `JWT_SECRET_KEY`   | Clave para firmar/verificar los JWT.                    |
 | `STATIC_API_TOKEN` | Token estatico predefinido que debe incluir el Bearer.  |
 | `HOST` / `PORT`    | Host y puerto del servidor local (por defecto 0.0.0.0:5000). |
+| `NEW_RELIC_LICENSE_KEY` | License key (ingest) de New Relic. Sin ella el agente queda deshabilitado. |
+| `NEW_RELIC_APP_NAME` | Nombre de la entidad en New Relic (`grupo16-blacklist-dev` en local). |
+| `NEW_RELIC_DISTRIBUTED_TRACING_ENABLED` | Habilita el distributed tracing (`true`). |
 
 ## Ejecucion
 
@@ -109,22 +112,50 @@ export TEST_DATABASE_URL=postgresql+psycopg2://postgres:postgres@localhost:5432/
 pytest -v
 ```
 
-## Integracion continua (AWS CodeBuild + CodePipeline)
+## Integracion y entrega continua (CodePipeline + CodeBuild + CodeDeploy)
 
-El archivo `buildspec.yml` define el build que ejecuta AWS CodeBuild en cada
-commit a `main` (disparado por AWS CodePipeline):
+Cada commit a `main` dispara el pipeline `grupo16-blacklist-pipeline`
+(Source → Build → Deploy), que despliega el microservicio en **AWS Fargate**:
 
-1. **install:** Python 3.12 e instalacion de `requirements.txt` (imagen
-   `aws/codebuild/amazonlinux-x86_64-standard:5.0`).
-2. **build:** `pytest` con reporte JUnit (visible en la pestaña *Reports* de
-   CodeBuild). Si alguna prueba falla, el build se aborta (`on-failure: ABORT`):
-   no se ejecuta `post_build` ni se sube artefacto.
-3. **artifacts:** ZIP listo para Elastic Beanstalk (`app/`, `.ebextensions/`,
-   `Procfile`, `requirements.txt`, `run.py`, `VERSION`) almacenado en S3. No hay despliegue
-   automatico (solo CI).
+1. **Build (CodeBuild, `buildspec.yml`):** instala Python 3.12 y las
+   dependencias, ejecuta `pytest` con reporte JUnit (pestaña *Reports*) y, si
+   todas las pruebas pasan, construye la imagen Docker (`Dockerfile`) y la sube a
+   Amazon ECR con el SHA del commit como etiqueta. Si alguna prueba falla, el
+   build se aborta (`on-failure: ABORT`): no se publica imagen y no se despliega.
+2. **Artefactos:** `appspec.yaml`, `taskdef.json` (definicion de tarea Fargate,
+   con los secretos leidos de SSM Parameter Store) e `imageDetail.json` (URI de
+   la imagen construida).
+3. **Deploy (CodeDeploy, blue/green):** registra una nueva revision de la
+   definicion de tarea y crea un *task set* de reemplazo en el target group
+   libre del ALB. Cuando esta sano, mueve el 100 % del trafico y despues termina
+   el task set original. Si el despliegue falla, hace rollback automatico.
 
-La configuracion paso a paso en la consola de AWS esta en
-[docs/ci-aws-setup.md](docs/ci-aws-setup.md).
+La guia paso a paso esta en [docs/ci-aws-setup.md](docs/ci-aws-setup.md) (CI) y
+[docs/entrega3-entrega-continua.md](docs/entrega3-entrega-continua.md) (CD en
+Fargate).
+
+## Monitoreo con New Relic
+
+El microservicio esta instrumentado con el agente APM de New Relic para Python
+(`newrelic` en `requirements.txt`). El `Dockerfile` arranca gunicorn envuelto
+por el agente (`newrelic-admin run-program gunicorn ...`), que se configura solo
+con variables de entorno. Si no hay `NEW_RELIC_LICENSE_KEY`, el agente queda
+deshabilitado y la aplicacion funciona igual.
+
+- **Desarrollo:** defina las variables `NEW_RELIC_*` en `.env` (ver
+  `.env.example`). La app reporta como `grupo16-blacklist-dev`.
+- **Produccion (Fargate):** `taskdef.json` lee la license key del parametro
+  SecureString `/grupo16/blacklist/newrelic_license_key` de SSM y reporta como
+  `grupo16-blacklist-prod`. La instrumentacion se despliega con el mismo
+  pipeline de CI/CD.
+- **Pruebas de estres:** `loadtest/locustfile.py` genera carga mixta (consultas,
+  altas y errores esperados 400/401) para observar en New Relic los tiempos de
+  respuesta, el Apdex, los errores y las alertas:
+
+  ```bash
+  export BLACKLIST_TOKEN=<jwt>
+  locust -f loadtest/locustfile.py --headless --host http://<url-del-alb>
+  ```
 
 ## API REST
 
